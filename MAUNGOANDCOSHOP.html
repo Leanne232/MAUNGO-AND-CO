@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Strawberry Bliss</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #e4cbda;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+
+    }
+
+    nav {
+    z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 60px;
+      
+    }
+    span{
+      font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    .logo {
+      font-size: 30px;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo img {
+      width: 40px;
+      height: 40px;
+    }
+    .nav-links {
+      display: flex;
+      gap: 25px;
+    }
+     .nav-links a:hover,
+    .nav-links a.active {
+      background-color: #6a110b;
+      color: white;
+      border-radius: 5px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #2e3b2e;
+      font-size: 16px;
+      font-weight: 500;
+      padding: 5px 10px;
+      transition: all 0.3s ease;
+    }
+
+     .header{
+      position: fixed; 
+    }
+
+    .product-section {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    .product-section h1 {
+      text-align: center;
+      font-size: 2.5rem;
+      color: #6a110b;
+      margin-bottom: 20px;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    .product-section p {
+      text-align: center;
+      font-size: 1.1rem;
+      color: #333;
+      margin-bottom: 60px;
+    }
+h2 {
+  font-family: 'Roboto', Arial, sans-serif; 
+  font-weight: 900;
+  color: #6a110b; /* deep strawberry red */
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+  text-shadow: 1px 2px #2c5a2a;
+  font-size: 3rem; 
+}
+
+    .product {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      margin-bottom: 60px;
+    }
+
+    .product:nth-child(even) {
+      flex-direction: row-reverse; /* alternate layout */
+    }
+
+    .product img {
+      border-radius: 12px;
+      max-width: 350px;
+      height: auto;
+      flex-shrink: 0;
+    }
+
+    .product .text {
+      max-width: 450px;
+    }
+
+    .product h2 {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #6a110b;
+      margin-bottom: 10px;
+      text-shadow: 1px 2px #2c5a2a;
+      font-size: 3rem; 
+      font-family: 'Playfair Display', Georgia, serif;
+    }
+
+    .product p {
+      font-size: 1rem;
+      color: #444;
+      margin-bottom: 20px;
+  font-family: 'Roboto', Arial, sans-serif; /* modern sans serif */
+  font-size: 1rem;
+  margin-bottom: 20px;
+  line-height: 1.8;
+}
+
+    .btn {
+      background-color: #6a110b;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      font-size: 1rem;
+      color: #e4cbda;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #8ca88d;
+    }
+
+    /* 📱 Mobile responsive fix */
+    @media (max-width: 768px) {
+      .product {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .product:nth-child(even) {
+        flex-direction: column; /* stop alternating on mobile */
+      }
+
+      .product img {
+        max-width: 90%;
+      }
+
+      .product .text {
+        max-width: 100%;
+      }
+
+  </style>
+</head>
+<body>
+
+  <header>
+     <nav>
+    <div class="logo">
+      <img src="C:/Users/USER/Documents/MAUNGOANDCOWEBSITE/images/maungo and co official.png" alt="logo">
+      <span>MAUNGO AND CO</span>
+    </div>
+    <div class="nav-links">
+      <a href="MAUNGOANDCOWEBSITE/MAUNGOANDCOWEBSITE.html" class="active">Home</a>
+      <a href="MAUNGOANDCOWEBSITE/MAUNGOANDCOSHOP.html">Shop</a>
+      <a href="MAUNGOANDCOWEBSITE/MAUNDOANDCOABOUT.html#">About</a>
+      <a href="MAUNGOANDCOWEBSITE/MAUNGOANDCOWEBSITE.html#contact">Contact Us</a>
+    </div>
+  </nav>
+</header>
+
+  <div class="product-section">
+    <h1>AN INVITATION TO INDULGE</h1>
+    <p>
+      We warmly invite you to taste the difference. Whether enjoyed fresh from the punnet, 
+      crafted into a delicate dessert, or shared at your most special occasions, our strawberries 
+      turn everyday moments into elegant indulgences. Because here at MAUNGO AND CO, 
+      strawberries aren’t just grown — they’re perfected.
+    </p>
+
+    <div class="product">
+      <img src="images/ca83d218972ca527df89bd399329b4d3.jpg" alt="Small Strawberry Box">
+      <div class="text">
+        <h2>Petite, but Perfectly Sweet</h2>
+        <p>Small sized strawberry box</p>
+        <button class="btn"><a href="https://wa.me/27650370950?text=Hello. I am interested in buying small sized strawberries.">Buy Now</a></button>
+      </div>
+    </div>
+
+    <div class="product">
+      <img src="images/download (8).jpeg" alt="Medium Strawberry Box">
+      <div class="text">
+        <h2>Nature’s Middle Pick</h2>
+        <p>Medium sized strawberry box</p>
+        <button class="btn"><a href="https://wa.me/27650370950?text=Hello. I am interested in buying medium sized strawberries.">Buy Now</a></button>
+      </div>
+    </div>
+
+    <div class="product">
+      <img src="images/strawbs (1).jpeg" alt="Large Strawberry Box">
+      <div class="text">
+        <h2>Berry Luxe Box</h2>
+        <p>Large sized strawberry box</p>
+        <button class="btn"><a href="https://wa.me/27650370950?text=Hello. I am interested in buying small sized strawberries.">Buy Now</a></button>
+      </div>
+    </div>
+  </div>
+
+  
+  
+</body>
+</html>
